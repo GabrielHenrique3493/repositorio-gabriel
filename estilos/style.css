@@ -50,7 +50,7 @@ section#ficha {
     width: 200px;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10px 100px 4px 100px;
     border: 5px solid white;
     outline: 5px solid rgb(71, 0, 0);
     display: block;
@@ -113,3 +113,37 @@ section#detalhes > ul > li {
     color: #800e13;
 }
 
+#conteiner {
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 10px;
+    font-size: 1.3em;
+}
+
+#conteiner > .item {
+    color: #1f1c1c;
+    border-radius: 20px;
+    box-shadow: -1px 1px 5px #800e14c2;
+    overflow: hidden;
+    margin-right: 5px;
+    padding-bottom: 30px;
+}
+
+#conteiner > .item > a > img{
+    width: 200px;
+
+
+}
+#conteiner > .item > a > img:hover {
+    font-size: 2em;
+    transition: all 0.5s;
+}
+
+#conteiner > .item:hover {
+    font-size: 2em;
+    transition: all 0.5s;
+    transition-timing-function: ease;
+}
