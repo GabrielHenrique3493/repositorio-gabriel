@@ -1,0 +1,22 @@
+@charset "UTF-8";
+ 
+@media screen and (min-width: 768px) {
+    body {
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    header > nav#menu {
+        width: 100vw;
+    }
+
+    main {
+        
+    }
+
+    section#ficha {
+        display: flex;
+        flex-direction:  row-reverse;
+    }
+}
+
