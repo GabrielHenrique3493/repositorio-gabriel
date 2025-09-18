@@ -1,164 +1,138 @@
-@charset "UTF-8";
 
 
-*{
-    margin: 0px;
-    padding: 0px;
+/*estilo geral */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-    background-color: lightgray;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;w
+    background-color: black;
+    height: 100vh;
 }
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-botao button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: red;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-botao button:hover {
+    box-shadow: 0px 0px 8px red;
+    transform: scale(1.05);
+}
+
+
+.logo a img {
+    height: 100px;
+    width: 100px;
+}
+
+/* estilo cabeçalho */
 
 header {
-    background-color: rgb(78, 0, 0);
-    color: rgb(255, 255, 255);
+    padding: 40px 4%;
 }
 
-nav#menu {
-    padding: 10px;
-    
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav#menu a {
+header a {
+    color: rgb(105, 105, 105);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
     color: white;
+    transform: scale(1.05);
 }
 
-main {
-    display: grid;
-    grid-template-rows: auto 90vw;
-    grid-template-columns: auto 90vw auto;
-    gap: 20px;
-    margin-top: 20px;
+header nav ul {
+    list-style: none;
 }
 
-section#ficha {
-    background-color: white;
-    padding: 15px;
-    grid-column: 2;
-    text-align: justify;
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
 }
 
-section#ficha > .topo > p {
-    width: 600px;
+.btn-botao button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: red;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
-#ficha > .foto {
+.btn-botao button:hover {
+    box-shadow: 0px 0px 8px red;
+}
+
+/*  topo do site */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site  .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+    color: white;
+    font-size: 42px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: red;
+    font-size: 84px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0;
+    width: 800px;
+}
+
+.topo-do-site .img-topo-site img {
     position: relative;
-    width: 200px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 10px 100px 4px 100px;
-    border: 5px solid white;
-    outline: 5px solid rgb(71, 0, 0);
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
+
 @keyframes flutuar {
-    0%{
+
+    0% {
         top: 0;
     }
     100% {
-        top: 10px;
+        top: 30px;
     }
-}
-
-section#ficha h1 {
-    color: #800e13;
-    line-height: 2em;
-    margin-top: 10px
-    ;
-}
-
-#ficha > .topo > #social {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 5px;
     
 }
 
-#ficha > .topo > #social > a {
-    color: #800e13;
-    font-size: 2em;
-}
-
-#ficha > .topo > #social > a:hover {
-    background-color: #4e1b1ee7;
-    border-radius: 40%;
-    color: white;
-    transition: background-color .5s ;
-}
-
-
-section#detalhes {
-    height: 700px;
-    grid-column: 2;
-    grid-row: 2;
-    background-color: white;
-    padding: 15px;
-}
-
-section#detalhes h2 {
-    color: #800e13
-}
-
-section#detalhes > ul {
-    list-style: none; 
-    gap: 2px;
-}
-
-section#detalhes > ul > li {
-    color: #000000;
-}
-
-#icon1 {
-    color: #800e13;
-}
-#icon2 {
-    color: #800e13;
-}
-
-#conteiner {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 100% ;
-    margin-top: 15px;
-    gap: 10px;
-    font-size: 1.3em;
-}
-
-#conteiner > .item {
-    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.562);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 150px;
-    height: 200px;
-    transition: all 0.5s;
-    transition-timing-function: ease;
-}
-#conteiner > .item > a{
-    color: #000000;
-    text-decoration: none;
-}
-
-#conteiner > .item > a > img {
-    width: 100%;
-}
-
-#conteiner > .item > a > img:hover {
-    width: 200px;
-}
-
-#conteiner > .item:hover {
-    width: 200px;
-    box-shadow: -1px 1px 13px  #ee000c;
-}
