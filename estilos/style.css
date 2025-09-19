@@ -44,6 +44,16 @@ body {
     width: 100px;
 }
 
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: red;
+}
+
 /* estilo cabeçalho */
 
 header {
@@ -136,3 +146,29 @@ section.topo-do-site  .flex {
     
 }
 
+/* estilos das especialidades */
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border: 2px solid white;
+}
+
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: red;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
