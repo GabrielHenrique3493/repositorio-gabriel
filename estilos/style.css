@@ -149,6 +149,7 @@ section.topo-do-site  .flex {
 /* estilos das especialidades */
 
 section.especialidades {
+    margin-top: 100px;
     padding: 40px 4%;
 }
 
@@ -159,7 +160,14 @@ section.especialidades .flex {
 .especialidades .especialidades-box {
     color: white;
     padding: 40px;
-    border: 2px solid white;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.541);
 }
 
 
