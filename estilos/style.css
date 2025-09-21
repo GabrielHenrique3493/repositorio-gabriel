@@ -312,3 +312,42 @@ footer .line-footer p a {
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1411px) {
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+
+    /* cabeçalho */
+    .menu-desktop, .btn-botao{
+        display: none;
+    }
+
+    /* topo do site */
+    .topo-do-site .txt-topo-site h1 {
+    font-size: 32px;
+    justify-self: center;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 400px;
+    }
+
+    .topo-do-site .txt-topo-site p {
+        width: 420px;
+    }
+
+    /* sobre */
+
+    .flex > .img-sobre > img {
+        width: 350px;
+    }
+
+
+}
