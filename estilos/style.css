@@ -69,7 +69,9 @@ header > .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
+
 
 header a {
     color: rgb(105, 105, 105);
